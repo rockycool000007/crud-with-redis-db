@@ -6,7 +6,7 @@ const express = require("express"),
 
 const config = require("./config/local");
 
-let client = redis.createClient();
+const client = redis.createClient();
 
 client.on("connect", function() {
   console.log("Connected to Redis...");
@@ -23,7 +23,7 @@ app.use(
   })
 );
 
-let todos = require("./routers/todo-route");
+const todos = require("./routers/todo-route");
 
 app.use("/", todos);
 
