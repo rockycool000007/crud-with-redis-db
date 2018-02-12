@@ -2,7 +2,6 @@
 const express = require("express"),
   redis = require("redis"),
   bodyParser = require("body-parser"),
-  expressValidator = require("express-validator"),
   cors = require("cors");
 
 const config = require("./config/local");
@@ -23,7 +22,6 @@ app.use(
     extended: true
   })
 );
-app.use(expressValidator());
 
 let todos = require("./routers/todo-route");
 
