@@ -1,0 +1,19 @@
+{
+  "name": "crud-with-redis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cors": "^2.8.4",
+    "express": "~4.15.2",
+    "nodemon": "^1.14.12",
+    "redis": "^2.8.0"
+  },
+  "author": "Adeyemi Kayode",
+  "license": "ISC"
+}
