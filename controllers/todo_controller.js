@@ -3,7 +3,7 @@ const redis = require("redis"),
 
 module.exports = {
   create: (req, res) => {
-    let id = req.body.id,
+    const id = req.body.id,
       title = req.body.title,
       description = req.body.description;
     try {
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   view: (req, res) => {
-    let id = req.params.id;
+    const id = req.params.id;
     try {
       client.hgetall(id, (err, reply) => {
         if (err) {
@@ -39,9 +39,9 @@ module.exports = {
   },
 
   update: (req, res) => {
-    let id = req.params.id;
+    const id = req.params.id;
     result = [];
-    for (let i in req.body) {
+    for (const i in req.body) {
       result.push(i, req.body[i]);
     }
 
