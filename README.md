@@ -1,7 +1,7 @@
 # crud-with-redis-db
 CRUD RESTFUL API using redis as the database
 
-# RedUsers
+# TodoApp
 Simple todo app using Node.js and Redis
 
 ### Version
